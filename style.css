@@ -1,0 +1,495 @@
+
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+p {
+    font-size: 13px;
+}
+
+
+/* Nav Bar */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 40px;
+    padding: 25px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+
+
+.logo {
+    margin-right:auto;
+    font-size: 12px;
+
+}
+
+
+.main-nav ul {
+    display: flex;
+    font-size: 12px;
+    
+}
+
+.main-menu ul {
+    display: flex;
+    flex: 1em;
+    margin-left: 90px;
+}
+
+.main-nav ul li a {
+	padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+	border-bottom: 2px solid #262626;
+}
+
+.main-nav ul li {
+    padding: 0 50px;
+}
+
+/* Tooltip */
+.globe .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .globe:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* About */
+/* Headings Font sizes */
+.about header, .faq-head, .contact-container {
+    font-size: 50px;
+    text-transform: uppercase;
+
+    
+}
+
+.about  {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,40%);
+    grid-gap: 40px;
+    padding: 5%;
+    background-color: #F5F5F5;
+    margin-bottom: 5%;
+    
+    
+   
+}
+ .about h1 {
+     grid-column: 1;
+     grid-row: 1;
+ }
+
+ .about p {
+     grid-column: 1;
+ }
+
+ .about .about-video {
+     grid-column: 3;
+     grid-row: 1;
+     
+ }
+
+/* About Features */
+
+.eng {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    justify-items: end;
+    align-items: end;
+    padding: 5%;
+    margin: 50px 20px;
+    border-bottom: 2px solid #EBEBEB;
+}
+
+
+.eng img {
+    width:100%;
+    height: 5%;
+    margin-bottom: 20px;
+}
+
+
+/* FAQ */
+/* Centring the section */
+.faq {      
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #EBEBEB;
+    margin-bottom: 15%;
+
+}
+
+.faq .container {
+   display: grid;
+   grid-template-columns: 1;
+   padding: 5%;
+}
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    transition: 0.5s;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin:10px 0;
+    text-align: left;
+}
+
+.active, .accordion-item:hover {
+    background-color: #ccc;
+} 
+  
+
+  .accordion-item {
+      padding: 0 20px;
+      background-color:white ;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.1s ease-out;
+  }
+
+  .faq-head {
+      margin-left: 5%;
+      padding-bottom: 25%;
+      text-transform: uppercase;
+
+  }
+
+
+  /* News */
+   .news {
+    display: grid;
+	grid-template-columns: repeat(4, 15%);
+    grid-gap: 50px;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    border-bottom: 2px solid #EBEBEB;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    background-color: #eee;
+    opacity: 0.5;
+
+
+   }
+
+   .news div {
+       padding: 20%;
+       
+   }
+
+   /* Buttons class */
+   .btn {
+	cursor: pointer;
+	display: inline-block;
+	border: 0;
+	padding: 10px 20px;      /*padding top/buttom left/right*/
+    color: #262626;
+    font-size:12px ;
+    
+}
+
+.btn:hover {
+    background-color: #333333;
+    color: white;
+    transition: .6s ;
+}
+
+.news img {
+    width: 80%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Contact main */
+.contact {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(uniti-7.png) no-repeat center center/cover;
+}
+
+.contact-container{
+   text-align: left;
+   color:#444;
+   margin-right: auto;
+   margin-top: auto;
+   padding-left: 50px;
+   padding-bottom: 50px;
+   
+
+}
+
+.contact-btn {
+    cursor: pointer;
+	display: inline-block;
+	border: 0;
+	padding: 10px 20px;      
+    color: white;
+    font-size:12px ;
+    background-color: #333333;
+}
+
+
+
+
+
+
+/* Footer */
+.footer {
+	background: grey;
+	color: white;
+	font-size: 12px;
+    padding: 35px 0;
+    height: 300px;
+    background-color: #2F2F2F;
+    width: 90%;
+    margin: 5% auto;
+    
+
+}
+
+.footer .container {
+	max-width: 1100px;
+	margin: 0 auto;
+    padding: 10px 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr );
+	grid-gap: 100px;
+    justify-items: center;
+    align-content: space-around;
+    text-transform: uppercase; 
+    width: 50%;
+     
+
+}
+
+
+.footer .container h4 {
+    padding-bottom: 20px;
+    
+
+}
+
+.footer a {
+    color: white;
+    font-size: 20px;
+   
+}
+
+.copy-right {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    padding: 5%;
+    background-color: #2F2F2F;
+    font-size: 5px;
+}
+
+/* Contact form */
+.contact-main {
+    background: url('uniti-6.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 20px;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    
+
+}
+.contact-main h3 {
+    text-align: center;
+    color: black;
+
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    margin: 40px auto;
+
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    
+
+}
+
+
+.contact-form-text   {
+    display: grid;
+    width: 100%;
+    margin: 16px 0;
+    border: 0;
+    background-color: #333333;
+    padding: 20px 40px;
+    color: blanchedalmond;
+    outline: none;
+    color: #dddddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: .6s ;
+}
+
+.contact-form-text textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: #2F2F2F;
+    color: #F5F5F5;
+    padding: 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-btn:hover {
+    background: black; ;
+}
+
+/* Contact form nav */
+
+.contact-nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 40px;
+    padding: 25px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+
+
+.contact-nav .logo {
+    margin-left: 100px;
+    font-size: 12px;
+
+}
+
+
+.contact-nav ul {
+    display: flex;
+    font-size: 12px;
+    
+}
+
+.contact-nav-menu ul {
+    display: flex;
+    flex: 1em;
+    margin-left: 90px;
+}
+
+.contact-nav ul li a {
+	padding-bottom: 2px;
+}
+
+.contact-nav ul li a:hover {
+	border-bottom: 2px solid #262626;
+}
+
+.contact-nav ul li {
+    padding: 0 50px;
+}
+
+.contact-right-menu {
+    margin-right: 50px;
+}
+
+/* Responsivness */
+ @media(max-width: 700px){
+     .eng{
+         grid-template-columns: repeat(1, 1fr);
+         font-size: 12px;
+     }
+
+     .faq {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        font-size: 10px;
+     }
+
+     .contact {
+         grid-template-columns: repeat(1. 1fr);
+         
+     }
+     .contact-container {
+         color: white;
+     }
+
+     .footer {
+        display: none;
+        
+     }
+ }
+
+ 
